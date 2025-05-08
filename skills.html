@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - UX Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .skills-section {
+            padding: 120px 5% 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .skill-category {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+            color: var(--medium-grey);
+        }
+
+        .skill-item::before {
+            content: "•";
+            color: var(--charcoal);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .tools-section {
+            margin-top: 60px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tool-item {
+            background-color: var(--light-grey);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .tool-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-item h4 {
+            color: var(--charcoal);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="skills-section">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>UX Design</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">User Research</li>
+                    <li class="skill-item">Wireframing</li>
+                    <li class="skill-item">Prototyping</li>
+                    <li class="skill-item">User Testing</li>
+                    <li class="skill-item">Information Architecture</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>UI Design</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">Visual Design</li>
+                    <li class="skill-item">Typography</li>
+                    <li class="skill-item">Color Theory</li>
+                    <li class="skill-item">Design Systems</li>
+                    <li class="skill-item">Responsive Design</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">Figma</li>
+                    <li class="skill-item">Adobe XD</li>
+                    <li class="skill-item">Sketch</li>
+                    <li class="skill-item">InVision</li>
+                    <li class="skill-item">HTML/CSS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tools-section">
+            <h3>Design Tools</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <h4>Figma</h4>
+                </div>
+                <div class="tool-item">
+                    <h4>Adobe XD</h4>
+                </div>
+                <div class="tool-item">
+                    <h4>Sketch</h4>
+                </div>
+                <div class="tool-item">
+                    <h4>InVision</h4>
+                </div>
+                <div class="tool-item">
+                    <h4>Photoshop</h4>
+                </div>
+                <div class="tool-item">
+                    <h4>Illustrator</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
