@@ -23,12 +23,12 @@
         }
 
         .contact-info {
-            color: var(--medium-grey);
+            color: var(--text-secondary);
         }
 
         .contact-info h3 {
             font-size: 1.5rem;
-            color: var(--charcoal);
+            color: var(--text-primary);
             margin-bottom: 20px;
         }
 
@@ -43,20 +43,21 @@
         }
 
         .social-link {
-            color: var(--charcoal);
+            color: var(--text-secondary);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .social-link:hover {
-            color: var(--medium-grey);
+            color: var(--accent);
         }
 
         .contact-form {
-            background-color: var(--white);
+            background-color: var(--card-bg);
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 1px solid var(--medium-grey);
         }
 
         .form-group {
@@ -66,16 +67,24 @@
         .form-group label {
             display: block;
             margin-bottom: 5px;
-            color: var(--charcoal);
+            color: var(--text-primary);
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid var(--light-grey);
+            background-color: var(--dark-grey);
+            border: 1px solid var(--medium-grey);
             border-radius: 5px;
             font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
         }
 
         .form-group textarea {
@@ -84,19 +93,20 @@
         }
 
         .submit-button {
-            background-color: var(--charcoal);
-            color: var(--white);
+            background-color: var(--accent);
+            color: var(--text-primary);
             padding: 12px 30px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .submit-button:hover {
-            background-color: var(--dark-grey);
+            background-color: #357abd;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {

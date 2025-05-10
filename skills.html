@@ -23,16 +23,17 @@
         }
 
         .skill-category {
-            background-color: var(--white);
+            background-color: var(--card-bg);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 1px solid var(--medium-grey);
         }
 
         .skill-category h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
-            color: var(--charcoal);
+            color: var(--text-primary);
         }
 
         .skill-list {
@@ -41,12 +42,12 @@
 
         .skill-item {
             margin-bottom: 15px;
-            color: var(--medium-grey);
+            color: var(--text-secondary);
         }
 
         .skill-item::before {
             content: "•";
-            color: var(--charcoal);
+            color: var(--accent);
             font-weight: bold;
             margin-right: 10px;
         }
@@ -63,19 +64,21 @@
         }
 
         .tool-item {
-            background-color: var(--light-grey);
+            background-color: var(--card-bg);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease;
+            border: 1px solid var(--medium-grey);
         }
 
         .tool-item:hover {
             transform: translateY(-5px);
+            border-color: var(--accent);
         }
 
         .tool-item h4 {
-            color: var(--charcoal);
+            color: var(--text-primary);
             margin-top: 10px;
         }
     </style>
